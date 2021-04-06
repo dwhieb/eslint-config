@@ -7,7 +7,7 @@ My personal ESLint config settings.
 * `.eslintrc.base.yml`: Rules relating to syntax errors, logic errors, variables, and best practices. Suitable for use on teams.
 * `.eslintrc.style.js`: Rules relating to stylistic choices. Highly opinionated and subjective; not suitable for use on teams.
 
-To use:
+## Usage
 
 1. Copy the configuration files to your project.
 2. Remove `.base` and `.style` from the filenames.
@@ -19,6 +19,10 @@ Rules that you wish to share with other developers should be added to `.base` an
 
 * shared rules: `.eslintrc.base.yml`
 * personal rules: `.eslintrc.style.js`
+
+## Development
+
+* This repo uses the ESLint configs to lint themselves. The file `.eslintrc.yml` extends the ESLint configs in this repo in order to lint the `.js` config itself.
 
 <!-- LINKS -->
 [clean-regex]:        https://github.com/RunDevelopment/eslint-plugin-clean-regex
