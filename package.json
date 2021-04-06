@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "My personal ESLint config settings.",
   "private": true,
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "main": ".eslintrc.js",
   "repository": {
     "type": "git",
@@ -17,7 +21,7 @@
     "url": "https://github.com/dwhieb/eslint-config/issues"
   },
   "homepage": "https://github.com/dwhieb/eslint-config#readme",
-  "devDependencies": {
-    "eslint": "^7.23.0"
+  "peerDependencies": {
+    "eslint": ">=7.23.0"
   }
 }
