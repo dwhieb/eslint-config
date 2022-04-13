@@ -1,17 +1,13 @@
 {
-  "name": "@dwhieb/eslint-config",
-  "version": "1.0.0",
+  "name": "@dwhieb/eslint-config-dwhieb",
+  "version": "2.0.0",
   "description": "My personal ESLint config settings.",
   "private": true,
   "keywords": [
     "eslint",
     "eslint-config"
   ],
-  "main": ".eslintrc.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dwhieb/eslint-config.git"
-  },
+  "repository": "git://github.com/dwhieb/eslint-config-dwhieb.git",
   "author": {
     "name": "Daniel W. Hieber",
     "url": "https://github.com/dwhieb"
@@ -21,7 +17,8 @@
     "url": "https://github.com/dwhieb/eslint-config/issues"
   },
   "homepage": "https://github.com/dwhieb/eslint-config#readme",
+  "type": "module",
   "peerDependencies": {
-    "eslint": ">=7.23.0"
+    "eslint": ">=8.13.0"
   }
 }
