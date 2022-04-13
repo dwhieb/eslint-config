@@ -2,7 +2,6 @@
   "name": "@dwhieb/eslint-config-dwhieb",
   "version": "2.0.0",
   "description": "My personal ESLint config settings.",
-  "private": true,
   "keywords": [
     "eslint",
     "eslint-config"
