@@ -6,7 +6,7 @@
     "eslint",
     "eslint-config"
   ],
-  "repository": "git://github.com/dwhieb/eslint-config-dwhieb.git",
+  "repository": "git://github.com/dwhieb/eslint-config.git",
   "author": {
     "name": "Daniel W. Hieber",
     "url": "https://github.com/dwhieb"
