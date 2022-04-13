@@ -1,5 +1,5 @@
 {
-  "name": "@dwhieb/eslint-config-dwhieb",
+  "name": "@dwhieb/eslint-config",
   "version": "2.0.0",
   "description": "My personal ESLint config settings.",
   "keywords": [
@@ -16,7 +16,6 @@
     "url": "https://github.com/dwhieb/eslint-config/issues"
   },
   "homepage": "https://github.com/dwhieb/eslint-config#readme",
-  "type": "module",
   "peerDependencies": {
     "eslint": ">=8.13.0"
   }
