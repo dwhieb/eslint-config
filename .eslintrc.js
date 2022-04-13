@@ -2,16 +2,16 @@ module.exports = {
   env: {
     es2022: true,
   },
-  extends: [`eslint:recommended`],
+  extends:   [`eslint:recommended`],
   overrides: [
     {
       files: [`**/*.test.*`],
       rules: {
-        "func-names": `off`,
-        "max-nested-callbacks": `off`,
-        "max-params": `off`,
-        "no-magic-numbers": `off`,
-        "no-param-reassign": `off`,
+        "func-names":            `off`,
+        "max-nested-callbacks":  `off`,
+        "max-params":            `off`,
+        "no-magic-numbers":      `off`,
+        "no-param-reassign":     `off`,
         "prefer-arrow-callback": `off`,
       },
     },
@@ -21,11 +21,11 @@ module.exports = {
       impliedStrict: true,
     },
     ecmaVersion: `latest`,
-    sourceType: `module`,
+    sourceType:  `module`,
   },
   reportUnusedDisableDirectives: true,
-  rules: {
-    "accessor-pairs": `warn`,
+  rules:                         {
+    "accessor-pairs":        `warn`,
     "array-bracket-newline": [
       `warn`,
       {
@@ -34,48 +34,48 @@ module.exports = {
     ],
     "array-bracket-spacing": `error`,
     "array-callback-return": `warn`,
-    "arrow-body-style": `warn`,
-    "arrow-parens": [
+    "arrow-body-style":      `warn`,
+    "arrow-parens":          [
       `error`,
       `as-needed`,
     ],
-    "arrow-spacing": `error`,
+    "arrow-spacing":    `error`,
     "block-scoped-var": `warn`,
-    "block-spacing": `error`,
-    "brace-style": [
+    "block-spacing":    `error`,
+    "brace-style":      [
       `warn`,
       `1tbs`,
       {
         allowSingleLine: true,
       },
     ],
-    camelcase: `warn`,
+    camelcase:                `warn`,
     "class-methods-use-this": `off`,
-    "comma-dangle": [
+    "comma-dangle":           [
       `error`,
       `always-multiline`,
     ],
-    "comma-spacing": `error`,
-    "comma-style": `error`,
+    "comma-spacing":             `error`,
+    "comma-style":               `error`,
     "computed-property-spacing": `error`,
-    curly: [
+    curly:                       [
       `error`,
       `multi-line`,
       `consistent`,
     ],
-    "default-case": `warn`,
-    "default-case-last": `warn`,
+    "default-case":       `warn`,
+    "default-case-last":  `warn`,
     "default-param-last": `warn`,
-    "dot-location": [
+    "dot-location":       [
       `error`,
       `property`,
     ],
-    "dot-notation": `error`,
-    "eol-last": `warn`,
-    eqeqeq: `warn`,
-    "func-call-spacing": `error`,
+    "dot-notation":       `error`,
+    "eol-last":           `warn`,
+    eqeqeq:               `warn`,
+    "func-call-spacing":  `error`,
     "func-name-matching": `error`,
-    "func-names": [
+    "func-names":         [
       `warn`,
       `as-needed`,
     ],
@@ -86,53 +86,56 @@ module.exports = {
       `getBeforeSet`,
     ],
     "implicit-arrow-linebreak": `error`,
-    indent: [
+    indent:                     [
       `error`,
       2,
       {
         MemberExpression: 0,
-        SwitchCase: 2,
+        SwitchCase:       2,
       },
     ],
     "key-spacing": [
       `error`,
       {
         align: `value`,
-        mode: `minimum`,
+        mode:  `minimum`,
       },
     ],
-    "keyword-spacing": `error`,
-    "lines-around-comment": `off`,
+    "keyword-spacing":             `error`,
+    "lines-around-comment":        `off`,
     "lines-between-class-members": `warn`,
-    "max-depth": `warn`,
-    "max-len": [
+    "max-depth":                   `warn`,
+    "max-len":                     [
       `warn`,
       {
-        code: 120,
+        code:           120,
         ignoreComments: true,
-        ignoreStrings: true,
+        ignoreStrings:  true,
       },
     ],
     "max-nested-callbacks": [
       `warn`,
       3,
     ],
-    "max-params": `warn`,
-    "max-statements": `off`,
+    "max-params":              `warn`,
+    "max-statements":          `off`,
     "max-statements-per-line": [
       `warn`,
       {
         max: 2,
       },
     ],
-    "new-cap": `warn`,
-    "newline-per-chained-call": `warn`,
-    "no-alert": `off`,
-    "no-array-constructor": `warn`,
-    "no-bitwise": `warn`,
-    "no-caller": `error`,
-    "no-confusing-arrow": `warn`,
-    "no-console": [
+    "new-cap":                  `warn`,
+    "newline-per-chained-call": [
+      `warn`,
+      { ignoreChainWithDepth: 3 },
+    ],
+    "no-alert":                 `off`,
+    "no-array-constructor":     `warn`,
+    "no-bitwise":               `warn`,
+    "no-caller":                `error`,
+    "no-confusing-arrow":       `warn`,
+    "no-console":               [
       `warn`,
       {
         allow: [
@@ -146,43 +149,43 @@ module.exports = {
       },
     ],
     "no-constructor-return": `warn`,
-    "no-duplicate-imports": [
+    "no-duplicate-imports":  [
       `warn`,
       {
         includeExports: true,
       },
     ],
     "no-else-return": `error`,
-    "no-empty": [
+    "no-empty":       [
       `error`,
       {
         allowEmptyCatch: false,
       },
     ],
     "no-empty-function": `error`,
-    "no-eq-null": `error`,
-    "no-eval": `warn`,
-    "no-extend-native": `warn`,
-    "no-extra-bind": `warn`,
-    "no-extra-label": `warn`,
-    "no-extra-parens": `warn`,
-    "no-fallthrough": [
+    "no-eq-null":        `error`,
+    "no-eval":           `warn`,
+    "no-extend-native":  `warn`,
+    "no-extra-bind":     `warn`,
+    "no-extra-label":    `warn`,
+    "no-extra-parens":   `warn`,
+    "no-fallthrough":    [
       `error`,
       {
         commentPattern: `/falls?\\s?through/i`,
       },
     ],
-    "no-floating-decimal": `error`,
+    "no-floating-decimal":  `error`,
     "no-implicit-coercion": `warn`,
-    "no-implicit-globals": `warn`,
-    "no-implied-eval": `warn`,
-    "no-invalid-this": `warn`,
-    "no-iterator": `error`,
-    "no-label-var": `warn`,
-    "no-lone-blocks": `warn`,
-    "no-lonely-if": `warn`,
-    "no-loop-func": `warn`,
-    "no-magic-numbers": [
+    "no-implicit-globals":  `warn`,
+    "no-implied-eval":      `warn`,
+    "no-invalid-this":      `warn`,
+    "no-iterator":          `error`,
+    "no-label-var":         `warn`,
+    "no-lone-blocks":       `warn`,
+    "no-lonely-if":         `warn`,
+    "no-loop-func":         `warn`,
+    "no-magic-numbers":     [
       `warn`,
       {
         ignore: [
@@ -213,49 +216,49 @@ module.exports = {
           500,
           503,
         ],
-        ignoreArrayIndexes: true,
+        ignoreArrayIndexes:  true,
         ignoreDefaultValues: true,
       },
     ],
     "no-mixed-operators": `warn`,
-    "no-multi-assign": `warn`,
-    "no-multi-spaces": [
+    "no-multi-assign":    `warn`,
+    "no-multi-spaces":    [
       `error`,
       {
         exceptions: {
           AssignmentExpression: true,
-          AssignmentPattern: true,
-          IfStatement: true,
-          ImportDeclaration: true,
-          ImportSpecifier: true,
-          SwitchCase: true,
-          VariableDeclaration: true,
-          VariableDeclarator: true,
+          AssignmentPattern:    true,
+          IfStatement:          true,
+          ImportDeclaration:    true,
+          ImportSpecifier:      true,
+          SwitchCase:           true,
+          VariableDeclaration:  true,
+          VariableDeclarator:   true,
         },
         ignoreEOLComments: true,
       },
     ],
-    "no-multi-str": `error`,
-    "no-multiple-empty-lines": `warn`,
-    "no-negated-condition": `warn`,
-    "no-nested-ternary": `warn`,
-    "no-new": `warn`,
-    "no-new-func": `warn`,
-    "no-new-object": `warn`,
-    "no-new-wrappers": `warn`,
-    "no-octal-escape": `error`,
-    "no-param-reassign": `warn`,
+    "no-multi-str":               `error`,
+    "no-multiple-empty-lines":    `warn`,
+    "no-negated-condition":       `warn`,
+    "no-nested-ternary":          `warn`,
+    "no-new":                     `warn`,
+    "no-new-func":                `warn`,
+    "no-new-object":              `warn`,
+    "no-new-wrappers":            `warn`,
+    "no-octal-escape":            `error`,
+    "no-param-reassign":          `warn`,
     "no-promise-executor-return": `warn`,
-    "no-proto": `error`,
-    "no-return-assign": [
+    "no-proto":                   `error`,
+    "no-return-assign":           [
       `warn`,
       `always`,
     ],
     "no-return-await": `warn`,
-    "no-script-url": `warn`,
+    "no-script-url":   `warn`,
     "no-self-compare": `error`,
-    "no-sequences": `error`,
-    "no-shadow": [
+    "no-sequences":    `error`,
+    "no-shadow":       [
       `warn`,
       {
         allow: [
@@ -271,21 +274,21 @@ module.exports = {
           `Text`,
         ],
         builtinGlobals: true,
-        hoist: `all`,
+        hoist:          `all`,
       },
     ],
-    "no-tabs": `warn`,
+    "no-tabs":                     `warn`,
     "no-template-curly-in-string": `warn`,
-    "no-throw-literal": `error`,
-    "no-trailing-spaces": `off`,
-    "no-undef": [
+    "no-throw-literal":            `error`,
+    "no-trailing-spaces":          `off`,
+    "no-undef":                    [
       `error`,
       {
         typeof: true,
       },
     ],
-    "no-undef-init": `error`,
-    "no-undefined": `warn`,
+    "no-undef-init":        `error`,
+    "no-undefined":         `warn`,
     "no-underscore-dangle": [
       `warn`,
       {
@@ -298,37 +301,37 @@ module.exports = {
       },
     ],
     "no-unmodified-loop-condition": `warn`,
-    "no-unneeded-ternary": [
+    "no-unneeded-ternary":          [
       `error`,
       {
         defaultAssignment: false,
       },
     ],
-    "no-unreachable-loop": `error`,
-    "no-unused-expressions": `error`,
+    "no-unreachable-loop":             `error`,
+    "no-unused-expressions":           `error`,
     "no-unused-private-class-members": `error`,
-    "no-use-before-define": [
+    "no-use-before-define":            [
       `warn`,
       {
-        classes: false,
+        classes:   false,
         functions: false,
       },
     ],
-    "no-useless-call": `error`,
-    "no-useless-computed-key": `warn`,
-    "no-useless-concat": `warn`,
-    "no-useless-constructor": `warn`,
-    "no-useless-rename": `warn`,
-    "no-useless-return": `warn`,
-    "no-var": `warn`,
-    "no-warning-comments": `warn`,
-    "no-whitespace-before-property": `error`,
+    "no-useless-call":                  `error`,
+    "no-useless-computed-key":          `warn`,
+    "no-useless-concat":                `warn`,
+    "no-useless-constructor":           `warn`,
+    "no-useless-rename":                `warn`,
+    "no-useless-return":                `warn`,
+    "no-var":                           `warn`,
+    "no-warning-comments":              `warn`,
+    "no-whitespace-before-property":    `error`,
     "nonblock-statement-body-position": `error`,
-    "object-curly-newline": [
+    "object-curly-newline":             [
       `warn`,
       {
         ObjectExpression: {
-          consistent: true,
+          consistent:    true,
           minProperties: 4,
         },
         ObjectPattern: {
@@ -350,12 +353,12 @@ module.exports = {
       },
     ],
     "object-shorthand": `warn`,
-    "one-var": [
+    "one-var":          [
       `error`,
       `never`,
     ],
     "operator-assignment": `error`,
-    "operator-linebreak": [
+    "operator-linebreak":  [
       `error`,
       `before`,
       {
@@ -371,17 +374,17 @@ module.exports = {
         allowNamedFunctions: true,
       },
     ],
-    "prefer-const": `error`,
-    "prefer-destructuring": `warn`,
+    "prefer-const":                   `error`,
+    "prefer-destructuring":           `warn`,
     "prefer-exponentiation-operator": `warn`,
-    "prefer-named-capture-group": `warn`,
-    "prefer-numeric-literals": `warn`,
-    "prefer-object-has-own": `warn`,
-    "prefer-promise-reject-errors": `warn`,
-    "prefer-rest-params": `warn`,
-    "prefer-spread": `warn`,
-    "prefer-template": `warn`,
-    "quote-props": [
+    "prefer-named-capture-group":     `warn`,
+    "prefer-numeric-literals":        `warn`,
+    "prefer-object-has-own":          `warn`,
+    "prefer-promise-reject-errors":   `warn`,
+    "prefer-rest-params":             `warn`,
+    "prefer-spread":                  `warn`,
+    "prefer-template":                `warn`,
+    "quote-props":                    [
       `warn`,
       `as-needed`,
     ],
@@ -390,24 +393,24 @@ module.exports = {
       `backtick`,
       {
         allowTemplateLiterals: true,
-        avoidEscape: true,
+        avoidEscape:           true,
       },
     ],
     "require-atomic-updates": `warn`,
-    "require-await": `warn`,
+    "require-await":          `warn`,
     "require-unicode-regexp": `warn`,
-    "rest-spread-spacing": `error`,
-    semi: [
+    "rest-spread-spacing":    `error`,
+    semi:                     [
       `error`,
       `never`,
     ],
     "semi-spacing": `error`,
-    "semi-style": `error`,
+    "semi-style":   `error`,
     "sort-imports": [
       `warn`,
       {
-        allowSeparatedGroups: true,
-        ignoreCase: true,
+        allowSeparatedGroups:  true,
+        ignoreCase:            true,
         memberSyntaxSortOrder: [
           `none`,
           `all`,
@@ -421,39 +424,39 @@ module.exports = {
       `asc`,
       {
         caseSensitive: false,
-        natural: true,
+        natural:       true,
       },
     ],
-    "sort-vars": `warn`,
-    "space-before-blocks": `error`,
+    "sort-vars":                   `warn`,
+    "space-before-blocks":         `error`,
     "space-before-function-paren": [
       `error`,
       {
         anonymous: `never`,
-        named: `never`,
+        named:     `never`,
       },
     ],
     "space-in-parens": `error`,
     "space-infix-ops": `error`,
     "space-unary-ops": `error`,
-    "spaced-comment": [
+    "spaced-comment":  [
       `error`,
       `always`,
       {
         markers: [`*`],
       },
     ],
-    "switch-colon-spacing": `error`,
-    "symbol-description": `error`,
+    "switch-colon-spacing":   `error`,
+    "symbol-description":     `error`,
     "template-curly-spacing": [
       `warn`,
       `always`,
     ],
     "template-tag-spacing": `error`,
-    "unicode-bom": `error`,
-    "vars-on-top": `warn`,
-    "yield-star-spacing": `error`,
-    yoda: [
+    "unicode-bom":          `error`,
+    "vars-on-top":          `warn`,
+    "yield-star-spacing":   `error`,
+    yoda:                   [
       `warn`,
       `never`,
       {
